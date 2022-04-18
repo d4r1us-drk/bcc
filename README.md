@@ -7,169 +7,169 @@ bcc is a fork from Besnn/moco. It supports a total of 166 currencies.
 <summary>List of supported currencies</summary>
 <br>
 afn - Afghan Afghani <br>
-all - Albanian Lek
-dzd - Algerian Dinar
-aoa - Angolan Kwanza
-ars - Argentine Peso
-amd - Armenian Dram
-awg - Aruban Florin
-aud - Australian Dollar
-azn - Azerbaijani Manat
-bsd - Bahamian Dollar
-bhd - Bahraini Dinar
-bdt - Bangladeshi Taka
-bbd - Barbadian Dollar
-byn - Belarusian Ruble
-bzd - Belize Dollar
-bmd - Bermudan Dollar
-btn - Bhutanese Ngultrum
-btc - Bitcoin
-bob - Bolivian Boliviano
-bam - Bosnia And Herzegovina Konvertibilna Marka
-bwp - Botswana Pula
-brl - Brazilian Real
-gbp - British Pound
-bnd - Brunei Dollar
-bgn - Bulgarian Lev
-bif - Burundi Franc
-khr - Cambodian Riel
-cad - Canadian Dollar
-cve - Cape Verdean Escudo
-kyd - Cayman Islands Dollar
-xaf - Central African CFA Franc
-xpf - CFP Franc
-clp - Chilean Peso
-clf - Chilean Unit Of Account
-cny - Chinese Yuan
-cop - Colombian Peso
-kmf - Comorian Franc
-cdf - Congolese Franc
-crc - Costa Rican Colon
-hrk - Croatian Kuna
-cuc - Cuban Convertible Peso
-cup - Cuban Peso
-czk - Czech Koruna
-dkk - Danish Krone
-djf - Djiboutian Franc
-dop - Dominican Peso
-xcd - East Caribbean Dollar
-egp - Egyptian Pound
-ern - Eritrean Nakfa
-etb - Ethiopian Birr
-eur - Euro
-fkp - Falkland Islands Pound
-fjd - Fijian Dollar
-gmd - Gambian Dalasi
-gel - Georgian Lari
-ghs - Ghanaian Cedi
-gip - Gibraltar Pound
-gtq - Guatemalan Quetzal
-ggp - Guernsey Pound
-gnf - Guinean Franc
-gyd - Guyanese Dollar
-htg - Haitian Gourde
-hnl - Honduran Lempira
-hkd - Hong Kong Dollar
-huf - Hungarian Forint
-isk - Icelandic Kr\u00f3na
-inr - Indian Rupee
-idr - Indonesian Rupiah
-irr - Iranian Rial
-iqd - Iraqi Dinar
-ils - Israeli New Sheqel
-jmd - Jamaican Dollar
-jpy - Japanese Yen
-jep - Jersey Pound
-jod - Jordanian Dinar
-kzt - Kazakhstani Tenge
-kes - Kenyan Shilling
-kwd - Kuwaiti Dinar
-kgs - Kyrgyzstani Som
-lak - Lao Kip
-lvl - Latvian Lats
-lbp - Lebanese Lira
-lsl - Lesotho Loti
-lrd - Liberian Dollar
-lyd - Libyan Dinar
-mop - Macanese Pataca
-mkd - Macedonian Denar
-mga - Malagasy Ariary
-mwk - Malawian Kwacha
-myr - Malaysian Ringgit
-mvr - Maldivian Rufiyaa
-imp - Manx pound
-mro - Mauritanian Ouguiya
-mur - Mauritian Rupee
-mxn - Mexican Peso
-mdl - Moldovan Leu
-mnt - Mongolian Tugrik
-mad - Moroccan Dirham
-mzn - Mozambican Metical
-mmk - Myanma Kyat
-nad - Namibian Dollar
-npr - Nepalese Rupee
-ang - Netherlands Antillean Gulden
-byn - New Belarusian Ruble
-twd - New Taiwan Dollar
-nzd - New Zealand Dollar
-nio - Nicaraguan Cordoba
-ngn - Nigerian Naira
-kpw - North Korean Won
-nok - Norwegian Krone
-zmk - Old Zambian Kwacha
-omr - Omani Rial
-top - Paanga
-pkr - Pakistani Rupee
-pab - Panamanian Balboa
-pgk - Papua New Guinean Kina
-pyg - Paraguayan Guarani
-pen - Peruvian Nuevo Sol
-php - Philippine Peso
-pln - Polish Zloty
-qar - Qatari Riyal
-ron - Romanian Leu
-rub - Russian Ruble
-rwf - Rwandan Franc
-shp - Saint Helena Pound
-svc - Salvadoran Col\u00f3n
-wst - Samoan Tala
-std - Sao Tome And Principe Dobra
-sar - Saudi Riyal
-rsd - Serbian Dinar
-scr - Seychellois Rupee
-sll - Sierra Leonean Leone
-xag - Silver (troy ounce)
-sgd - Singapore Dollar
-sbd - Solomon Islands Dollar
-sos - Somali Shilling
-zar - South African Rand
-krw - South Korean Won
-xdr - Special Drawing Rights
-lkr - Sri Lankan Rupee
-sdg - Sudanese Pound
-srd - Surinamese Dollar
-szl - Swazi Lilangeni
-sek - Swedish Krona
-chf - Swiss Franc
-syp - Syrian Pound
-tjs - Tajikistani Somoni
-tzs - Tanzanian Shilling
-thb - Thai Baht
-ttd - Trinidad and Tobago Dollar
-tnd - Tunisian Dinar
-try - Turkish New Lira
-tmt - Turkmenistan Manat
-aed - UAE Dirham
-ugx - Ugandan Shilling
-uah - Ukrainian Hryvnia
-usd - United States Dollar
-uyu - Uruguayan Peso
-uzs - Uzbekistani Som
-vuv - Vanuatu Vatu
-vef - Venezuelan Bolivar
-vnd - Vietnamese Dong
-xof - West African CFA Franc
-yer - Yemeni Rial
-zmw - Zambian Kwacha
+all - Albanian Lek <br>
+dzd - Algerian Dinar <br>
+aoa - Angolan Kwanza <br>
+ars - Argentine Peso <br>
+amd - Armenian Dram <br>
+awg - Aruban Florin <br>
+aud - Australian Dollar <br>
+azn - Azerbaijani Manat <br>
+bsd - Bahamian Dollar <br>
+bhd - Bahraini Dinar <br>
+bdt - Bangladeshi Taka <br>
+bbd - Barbadian Dollar <br>
+byn - Belarusian Ruble <br>
+bzd - Belize Dollar <br>
+bmd - Bermudan Dollar <br>
+btn - Bhutanese Ngultrum <br>
+btc - Bitcoin <br>
+bob - Bolivian Boliviano <br>
+bam - Bosnia And Herzegovina Konvertibilna Marka <br>
+bwp - Botswana Pula <br>
+brl - Brazilian Real <br>
+gbp - British Pound <br>
+bnd - Brunei Dollar <br>
+bgn - Bulgarian Lev <br>
+bif - Burundi Franc <br>
+khr - Cambodian Riel <br>
+cad - Canadian Dollar <br>
+cve - Cape Verdean Escudo <br>
+kyd - Cayman Islands Dollar <br>
+xaf - Central African CFA Franc <br>
+xpf - CFP Franc <br>
+clp - Chilean Peso <br>
+clf - Chilean Unit Of Account <br>
+cny - Chinese Yuan <br>
+cop - Colombian Peso <br>
+kmf - Comorian Franc <br>
+cdf - Congolese Franc <br>
+crc - Costa Rican Colon <br>
+hrk - Croatian Kuna <br>
+cuc - Cuban Convertible Peso <br>
+cup - Cuban Peso <br>
+czk - Czech Koruna <br>
+dkk - Danish Krone <br>
+djf - Djiboutian Franc <br>
+dop - Dominican Peso <br>
+xcd - East Caribbean Dollar <br>
+egp - Egyptian Pound <br>
+ern - Eritrean Nakfa <br>
+etb - Ethiopian Birr <br>
+eur - Euro <br>
+fkp - Falkland Islands Pound <br>
+fjd - Fijian Dollar <br>
+gmd - Gambian Dalasi <br>
+gel - Georgian Lari <br>
+ghs - Ghanaian Cedi <br>
+gip - Gibraltar Pound <br>
+gtq - Guatemalan Quetzal <br>
+ggp - Guernsey Pound <br>
+gnf - Guinean Franc <br>
+gyd - Guyanese Dollar <br>
+htg - Haitian Gourde <br>
+hnl - Honduran Lempira <br>
+hkd - Hong Kong Dollar <br>
+huf - Hungarian Forint <br>
+isk - Icelandic Kr\u00f3na <br>
+inr - Indian Rupee <br>
+idr - Indonesian Rupiah <br>
+irr - Iranian Rial <br>
+iqd - Iraqi Dinar <br>
+ils - Israeli New Sheqel <br>
+jmd - Jamaican Dollar <br>
+jpy - Japanese Yen <br>
+jep - Jersey Pound <br>
+jod - Jordanian Dinar <br>
+kzt - Kazakhstani Tenge <br>
+kes - Kenyan Shilling <br>
+kwd - Kuwaiti Dinar <br>
+kgs - Kyrgyzstani Som <br>
+lak - Lao Kip <br>
+lvl - Latvian Lats <br>
+lbp - Lebanese Lira <br>
+lsl - Lesotho Loti <br>
+lrd - Liberian Dollar <br>
+lyd - Libyan Dinar <br>
+mop - Macanese Pataca <br>
+mkd - Macedonian Denar <br>
+mga - Malagasy Ariary <br>
+mwk - Malawian Kwacha <br>
+myr - Malaysian Ringgit <br>
+mvr - Maldivian Rufiyaa <br>
+imp - Manx pound <br>
+mro - Mauritanian Ouguiya <br>
+mur - Mauritian Rupee <br>
+mxn - Mexican Peso <br>
+mdl - Moldovan Leu <br>
+mnt - Mongolian Tugrik <br>
+mad - Moroccan Dirham <br>
+mzn - Mozambican Metical <br>
+mmk - Myanma Kyat <br>
+nad - Namibian Dollar <br>
+npr - Nepalese Rupee <br>
+ang - Netherlands Antillean Gulden <br>
+byn - New Belarusian Ruble <br>
+twd - New Taiwan Dollar <br>
+nzd - New Zealand Dollar <br>
+nio - Nicaraguan Cordoba <br>
+ngn - Nigerian Naira <br>
+kpw - North Korean Won <br>
+nok - Norwegian Krone <br>
+zmk - Old Zambian Kwacha <br>
+omr - Omani Rial <br>
+top - Paanga <br>
+pkr - Pakistani Rupee <br>
+pab - Panamanian Balboa <br>
+pgk - Papua New Guinean Kina <br>
+pyg - Paraguayan Guarani <br>
+pen - Peruvian Nuevo Sol <br>
+php - Philippine Peso <br>
+pln - Polish Zloty <br>
+qar - Qatari Riyal <br>
+ron - Romanian Leu <br>
+rub - Russian Ruble <br>
+rwf - Rwandan Franc <br>
+shp - Saint Helena Pound <br>
+svc - Salvadoran Col\u00f3n <br>
+wst - Samoan Tala <br>
+std - Sao Tome And Principe Dobra <br>
+sar - Saudi Riyal <br>
+rsd - Serbian Dinar <br>
+scr - Seychellois Rupee <br>
+sll - Sierra Leonean Leone <br>
+xag - Silver (troy ounce) <br>
+sgd - Singapore Dollar <br>
+sbd - Solomon Islands Dollar <br>
+sos - Somali Shilling <br>
+zar - South African Rand <br>
+krw - South Korean Won <br>
+xdr - Special Drawing Rights <br>
+lkr - Sri Lankan Rupee <br>
+sdg - Sudanese Pound <br>
+srd - Surinamese Dollar <br>
+szl - Swazi Lilangeni <br>
+sek - Swedish Krona <br>
+chf - Swiss Franc <br>
+syp - Syrian Pound <br>
+tjs - Tajikistani Somoni <br>
+tzs - Tanzanian Shilling <br>
+thb - Thai Baht <br>
+ttd - Trinidad and Tobago Dollar <br>
+tnd - Tunisian Dinar <br>
+try - Turkish New Lira <br>
+tmt - Turkmenistan Manat <br>
+aed - UAE Dirham <br>
+ugx - Ugandan Shilling <br>
+uah - Ukrainian Hryvnia <br>
+usd - United States Dollar <br>
+uyu - Uruguayan Peso <br>
+uzs - Uzbekistani Som <br>
+vuv - Vanuatu Vatu <br>
+vef - Venezuelan Bolivar <br>
+vnd - Vietnamese Dong <br>
+xof - West African CFA Franc <br>
+yer - Yemeni Rial <br>
+zmw - Zambian Kwacha <br>
 zwl - Zimbabwean Dollar
 details>
