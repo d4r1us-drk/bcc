@@ -172,7 +172,7 @@ xof - West African CFA Franc <br>
 yer - Yemeni Rial <br>
 zmw - Zambian Kwacha <br>
 zwl - Zimbabwean Dollar
-/details>
+</details>
 
 ### Usage
 Main syntax:
