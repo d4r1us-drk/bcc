@@ -174,8 +174,29 @@ zmw - Zambian Kwacha <br>
 zwl - Zimbabwean Dollar
 </details>
 
+### Dependencies
+* bash
+* curl
+* sed
+
 ### Usage
 Main syntax:
 ```sh
-bcc <amount> <from> <to>
+$ bcc <amount> <from> <to>
 ```
+
+### Installation
+* Make sure you have the dependencies installed on your system before installing this script!
+* To install
+```sh
+$ git clone https://github.com/d4r1us-drk/bcc.git # first clone this repository
+$ cd bcc # cd into it
+$ sudo make install # install it
+```
+* To uninstall
+```sh
+$ sudo make uninstall # while being inside the git repo
+```
+
+### License
+This project is licensed under [GPL-3.0](https://raw.githubusercontent.com/Illumina/licenses/master/gpl-3.0.txt).
