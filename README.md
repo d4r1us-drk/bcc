@@ -1,7 +1,7 @@
 <h1 align="center">bcc</h1>
 <p align="center">Bash Currency Converter is a tool for currency conversion using the free.currconv API</p>
 
-### Description and usage
+### Description
 bcc is a fork from Besnn/moco. It supports a total of 166 currencies.
 <details>
 <summary>List of supported currencies</summary>
@@ -173,3 +173,9 @@ yer - Yemeni Rial <br>
 zmw - Zambian Kwacha <br>
 zwl - Zimbabwean Dollar
 details>
+
+### Usage
+Main syntax:
+```sh
+bcc <amount> <from> <to>
+```

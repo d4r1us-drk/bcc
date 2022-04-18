@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Bash Currency Converter (bcc), forked from "https://github.com/Besnn/moco-cli.git" by Clay Gomera (Drake).
-# syntax: bcc <amount> <from> {<to>}
+# syntax: bcc <amount> <from> <to>
 
 info="afn - Afghan Afghani\nall - Albanian Lek\ndzd - Algerian Dinar\naoa - Angolan Kwanza\nars - Argentine Peso\namd - Armenian Dram\nawg - Aruban Florin\naud - Australian Dollar\nazn - Azerbaijani Manat\nbsd - Bahamian Dollar\nbhd - Bahraini Dinar\nbdt - Bangladeshi Taka\nbbd - Barbadian Dollar\nbyn - Belarusian Ruble\nbzd - Belize Dollar\nbmd - Bermudan Dollar\nbtn - Bhutanese Ngultrum\nbtc - Bitcoin\nbob - Bolivian Boliviano\nbam - Bosnia And Herzegovina Konvertibilna Marka\nbwp - Botswana Pula\nbrl - Brazilian Real\ngbp - British Pound\nbnd - Brunei Dollar\nbgn - Bulgarian Lev\nbif - Burundi Franc\nkhr - Cambodian Riel\ncad - Canadian Dollar\ncve - Cape Verdean Escudo\nkyd - Cayman Islands Dollar\nxaf - Central African CFA Franc\nxpf - CFP Franc\nclp - Chilean Peso\nclf - Chilean Unit Of Account\ncny - Chinese Yuan\ncop - Colombian Peso\nkmf - Comorian Franc\ncdf - Congolese Franc\ncrc - Costa Rican Colon\nhrk - Croatian Kuna\ncuc - Cuban Convertible Peso\ncup - Cuban Peso\nczk - Czech Koruna\ndkk - Danish Krone\ndjf - Djiboutian Franc\ndop - Dominican Peso\nxcd - East Caribbean Dollar\negp - Egyptian Pound\nern - Eritrean Nakfa\netb - Ethiopian Birr\neur - Euro\nfkp - Falkland Islands Pound\nfjd - Fijian Dollar\ngmd - Gambian Dalasi\ngel - Georgian Lari\nghs - Ghanaian Cedi\ngip - Gibraltar Pound\ngtq - Guatemalan Quetzal\nggp - Guernsey Pound\ngnf - Guinean Franc\ngyd - Guyanese Dollar\nhtg - Haitian Gourde\nhnl - Honduran Lempira\nhkd - Hong Kong Dollar\nhuf - Hungarian Forint\nisk - Icelandic Kr\u00f3na\ninr - Indian Rupee\nidr - Indonesian Rupiah\nirr - Iranian Rial\niqd - Iraqi Dinar\nils - Israeli New Sheqel\njmd - Jamaican Dollar\njpy - Japanese Yen\njep - Jersey Pound\njod - Jordanian Dinar\nkzt - Kazakhstani Tenge\nkes - Kenyan Shilling\nkwd - Kuwaiti Dinar\nkgs - Kyrgyzstani Som\nlak - Lao Kip\nlvl - Latvian Lats\nlbp - Lebanese Lira\nlsl - Lesotho Loti\nlrd - Liberian Dollar\nlyd - Libyan Dinar\nmop - Macanese Pataca\nmkd - Macedonian Denar\nmga - Malagasy Ariary\nmwk - Malawian Kwacha\nmyr - Malaysian Ringgit\nmvr - Maldivian Rufiyaa\nimp - Manx pound\nmro - Mauritanian Ouguiya\nmur - Mauritian Rupee\nmxn - Mexican Peso\nmdl - Moldovan Leu\nmnt - Mongolian Tugrik\nmad - Moroccan Dirham\nmzn - Mozambican Metical\nmmk - Myanma Kyat\nnad - Namibian Dollar\nnpr - Nepalese Rupee\nang - Netherlands Antillean Gulden\nbyn - New Belarusian Ruble\ntwd - New Taiwan Dollar\nnzd - New Zealand Dollar\nnio - Nicaraguan Cordoba\nngn - Nigerian Naira\nkpw - North Korean Won\nnok - Norwegian Krone\nzmk - Old Zambian Kwacha\nomr - Omani Rial\ntop - Paanga\npkr - Pakistani Rupee\npab - Panamanian Balboa\npgk - Papua New Guinean Kina\npyg - Paraguayan Guarani\npen - Peruvian Nuevo Sol\nphp - Philippine Peso\npln - Polish Zloty\nqar - Qatari Riyal\nron - Romanian Leu\nrub - Russian Ruble\nrwf - Rwandan Franc\nshp - Saint Helena Pound\nsvc - Salvadoran Col\u00f3n\nwst - Samoan Tala\nstd - Sao Tome And Principe Dobra\nsar - Saudi Riyal\nrsd - Serbian Dinar\nscr - Seychellois Rupee\nsll - Sierra Leonean Leone\nxag - Silver (troy ounce)\nsgd - Singapore Dollar\nsbd - Solomon Islands Dollar\nsos - Somali Shilling\nzar - South African Rand\nkrw - South Korean Won\nxdr - Special Drawing Rights\nlkr - Sri Lankan Rupee\nsdg - Sudanese Pound\nsrd - Surinamese Dollar\nszl - Swazi Lilangeni\nsek - Swedish Krona\nchf - Swiss Franc\nsyp - Syrian Pound\ntjs - Tajikistani Somoni\ntzs - Tanzanian Shilling\nthb - Thai Baht\nttd - Trinidad and Tobago Dollar\ntnd - Tunisian Dinar\ntry - Turkish New Lira\ntmt - Turkmenistan Manat\naed - UAE Dirham\nugx - Ugandan Shilling\nuah - Ukrainian Hryvnia\nusd - United States Dollar\nuyu - Uruguayan Peso\nuzs - Uzbekistani Som\nvuv - Vanuatu Vatu\nvef - Venezuelan Bolivar\nvnd - Vietnamese Dong\nxof - West African CFA Franc\nyer - Yemeni Rial\nzmw - Zambian Kwacha\nzwl - Zimbabwean Dollar\n"
 
@@ -46,7 +46,7 @@ echo
 exit 1
 esac
 if ! [[ $1 =~ ^[[:digit:]].?+$ ]]; then
-	echo -e $RED"[AMOUNT] not valid" 1>&2
+	echo -e $RED"The [amount] is not valid" 1>&2
 	echo -e "Has to be decimal" 1>&2
 	echo -e "\n"$RESET_COLOR
 	exit 1
@@ -55,7 +55,7 @@ fi
 # check if parameters are inputted
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
-    echo -e $RED"Usage: <alias> [AMOUNT] [FROM_CURRENCY] {TO_CURRENCY}"$RESET_COLOR 1>&2
+    echo -e $RED"Usage: bcc [amount] [from-currency] {to-currency}"$RESET_COLOR 1>&2
     echo -e "\n" 1>&2
 	exit 1
 fi
@@ -78,8 +78,8 @@ do
 done
 
 if [ "$found_from" = false ]; then
-	echo -e $RED"[FROM_CURRENCY] not valid" 1>&2
-	echo -e "type <alias> help for valid currencies" 1>&2
+	echo -e $RED"[from] currency is not valid" 1>&2
+	echo -e "type 'bcc help' for valid currencies" 1>&2
 	echo -e "\n"$RESET_COLOR
 	exit 1
 fi
@@ -94,8 +94,8 @@ do
 		fi
 	done
 	if [ $to_found = false ]; then
-		echo -e $RED"[TO_CURRENCY] not valid" 1>&2
-		echo -e "type <alias> help for valid currencies" 1>&2
+		echo -e $RED"{to} currency is not valid" 1>&2
+		echo -e "type 'bcc help' for valid currencies" 1>&2
 		echo -e "\n"$RESET_COLOR
 		exit 1
 	fi
