@@ -1,0 +1,2 @@
+# bcc
+Bash Currecy Converter
