@@ -186,16 +186,16 @@ $ bcc <amount> <from> <to>
 ```
 
 ### Installation
-* Make sure you have the dependencies installed on your system before installing this script!
+Make sure you have the dependencies installed on your system before installing this script!
 * To install
 ```sh
-$ git clone https://github.com/d4r1us-drk/bcc.git # first clone this repository
-$ cd bcc # cd into it
-$ sudo make install # install it
+$ git clone https://github.com/d4r1us-drk/bcc.git 	# first clone this repository
+$ cd bcc 						# cd into it
+$ sudo make install 					# install it
 ```
 * To uninstall
 ```sh
-$ sudo make uninstall # while being inside the git repo
+$ sudo make uninstall 					# while being inside the git repo
 ```
 
 ### License
