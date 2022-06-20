@@ -68,21 +68,25 @@ from_currency=$2
 shift; shift
 to_currencies=($@)
 
-# check if <from and to> arguments are valid
+# check if arguments are valid
+
 found_from=false
 declare -i count=0
+
 for i in ${currencies[@]}
 do
 	if [ "$from_currency" = "$i" ]; then
 		found_from=true
 	fi
 done
+
 if [ "$found_from" = false ]; then
-	echo -e $RED"[from] currency is not valid" 1>&2
-	echo -e "type 'bcc help' for valid currencies" 1>&2
+	echo -e $RED"[FROM_CURRENCY] not valid" 1>&2
+	echo -e "type <bcc --help> for valid currencies" 1>&2
 	echo -e "\n"$RESET_COLOR
 	exit 1
 fi
+
 for i in ${to_currencies[@]}
 do
 	for j in ${currencies[@]}
@@ -93,15 +97,15 @@ do
 		fi
 	done
 	if [ $to_found = false ]; then
-		echo -e $RED"{to} currency is not valid" 1>&2
-		echo -e "type 'bcc help' for valid currencies" 1>&2
+		echo -e $RED"[TO_CURRENCY] not valid" 1>&2
+		echo -e "type <bcc --help> for valid currencies" 1>&2
 		echo -e "\n"$RESET_COLOR
 		exit 1
 	fi
 done
 
-# currency position for syntax
 from_currency=$( echo $from_currency | tr '[:lower:]' '[:upper:]' )
+
 declare -i position=0
 for curr in ${to_currencies[@]}
 do
@@ -112,19 +116,20 @@ do
 	position+=1
 done
 unset IDs[$(expr $position - 1)]
+
 declare -i length=${#to_currencies[@]}
 declare -a rates
 declare request
 
-# getting input
 for i in ${IDs[@]}
 do
 	request=$request"$i"
 done
 
-# giving output
-get=$(curl --silent https://currconv.com/api/v7/convert\?q\=${request}\&compact\=ultra\&apiKey\=${API_KEY})
-rates=($(echo $get | egrep -o '*[0-9.]*[0-9]'))
+get=$(curl --silent https://free.currconv.com/api/v7/convert\?q\=${request}\&compact\=ultra\&apiKey\=${API_KEY})
+
+rates=($(echo $get | grep -Eo '*[0-9.]*[0-9]'))
+
 for ((i=0; i < length; i++))
 do
 		echo -en "$GREEN$from_currency" "to" "$(echo -en ${to_currencies[$i]} | tr '[:lower:]' '[:upper:]')"
@@ -132,5 +137,6 @@ do
  		LC_NUMERIC="en_US.UTF-8" printf "%0.3f\n" $(echo "${rates[$i]} * $amount" | bc -l)
 		echo -en $RESET_COLOR
 done
+
 echo -en '\n'
 exit 0
